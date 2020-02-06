@@ -4,10 +4,11 @@ import {createAppContainer} from 'react-navigation';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import HomeDrawer from 'components/custom/Drawer/HomeDrawer';
 import {app} from 'helpers/constants';
+import {Home} from '../../components/screens';
 
 const index = createDrawerNavigator(
   {
-    Dashboard,
+    Home,
   },
   {
     drawerPosition: 'left',
@@ -32,7 +33,7 @@ const index = createDrawerNavigator(
     contentComponent: props => {
       return <HomeDrawer {...props} />;
     },
-    initialRouteName: 'Dashboard',
+    initialRouteName: 'Home',
   },
 );
 
